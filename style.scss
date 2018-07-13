@@ -1,0 +1,152 @@
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  background-color: $from;
+  background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+  background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+  background: linear-gradient(to right, $from 0%, $to $stop);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  width: 110px;
+}
+
+.navbar-logo {
+  width: 10%;
+  height: 10%;
+}
+
+.main-container .display-4, .display-5 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.personal-bg {  
+  @include horizontal-gradient(#392751, #8669ad);
+  height: 550px;
+  width: 100%;
+}
+
+.business-bg {
+  @include horizontal-gradient(orange, red);
+  height: 550px;
+  width: 100%;
+}
+
+.agency-bg {
+  @include horizontal-gradient(green, yellow);
+  height: 550px;
+  width: 100%;
+}
+
+
+.buttons-group {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons-group .btn {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.buttons-group .btn:active {
+  background-color: white;
+}
+
+.container-personal, .container-agency, .container-business {
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  min-height: 800px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 42px -2px rgba(0,0,0,0.64);
+  -moz-box-shadow: 0px 3px 42px -2px rgba(0,0,0,0.64);
+  box-shadow: 0px 3px 42px -2px rgba(0,0,0,0.64);
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+
+.container-personal h1, h2, h3, h4, h5 {
+  margin-bottom: 30px;
+}
+
+.container-personal h4 {
+  font-size: 16px;
+}
+
+
+.far, .fas {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  padding: 7px;
+  margin-right: 5px;
+}
+
+.wrapper-left-bottom, .wrapper-right-bottom {
+  padding-left: 30px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+    margin-bottom: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    -webkit-box-shadow: 0px 3px 42px -2px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 3px 42px -2px rgba(0,0,0,0.64);
+    box-shadow: 0px 3px 42px -2px rgba(0,0,0,0.64);
+    background: white;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 3px 42px -2px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 3px 42px -2px rgba(0,0,0,0.64);
+    box-shadow: 0px 3px 42px -2px rgba(0,0,0,0.64);
+    background: white;
+    cursor: pointer;
+}
+
+#slider-value {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: solid 1px lightgrey;
+  padding: 3px 10px;
+}
+
+img {
+  width: 100%
+}

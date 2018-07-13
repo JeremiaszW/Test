@@ -1,1 +1,239 @@
-<index>	</index>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotjar - Pricing Plans</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	
+
+
+
+</head>
+
+<body onload="setMainBusiness()">
+<!--navbar-->
+	<nav class="navbar navbar-expand-md navbar-light bg-white">
+		<div class="container-fluid">
+			<a href="#" class="navbar-logo"><img src="img/logo.webp">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse text-center" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Product Tour</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Testimonials</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Support</a>
+					</li>
+					<button type="button" class="btn btn-danger">TRY IT FOR FREE</button>
+					<button type="button" class="btn btn-outline-secondary">SIGN IN</button>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!--body-->
+<div id="bg-change">
+	<div class="main-container container text-center">
+		<div class="row-fluid">
+			<div class="display-4">Find the right plan for your site:
+			</div>
+			<div class="buttons-group btn-group btn-group-lg" role="group">
+				<button type="button" class="btn btn-secondary" onclick="setMainPersonal()">Personal</button>
+				<button type="button" class="btn btn-secondary" onclick="setMainBusiness()">Business</button>
+				<button type="button" class="btn btn-secondary" onclick="setMainAgency()">Agency</button>
+			</div>	
+			<div class="memo-change">
+				<div class="personal-memo display-5 text-center">For personal projects and sites with low traffic.</div>
+				<div class="business-memo display-5 text-center">We offer plans for Businesses of all sizes.</div>
+				<div class="agency-memo display-5 text-center">For Agencies and Consultants working with client sites.</div>
+			</div>		
+		</div>
+	</div>
+
+<!--plans-->
+	<!--personal-->
+	<div class="container-personal container-fluid padding" id="main-personal">
+		<div class="row text-center">
+			<div class="col-sm-6">
+				<h2>BASIC</h2>
+				<p>A limited plan for students & enthusiasts.</p>
+				<h3>FREE FOREVER</h3>
+				<button class="btn btn-large btn-outline-secondary" type="button">START NOW</button>
+				<p>Collect data from:</p>
+				<h4>2,000 pageviews / day</h4>
+				<div class="wrapper-left-bottom text-left">
+					<p><i class="far fa-calendar-alt"></i>Limited reports</p>
+					<p><i class="far fa-user"></i>Unlimited users</p>
+					<p><i class="far fa-hdd"></i>Data storage for 365 days</p>
+				</div>
+			</div>
+			<div class="col-sm-6 ">
+				<h2>PLUS</h2>
+				<p>For low traffic sites & early stage Startups.</p>
+				<h3>&euro; 29 / month</h3>
+				<button class="btn btn-large btn-danger" type="button">TRY IT</button>
+				<p>Collect data from:</p>
+				<h4>10,000 pageviews / day</h4>
+				<div class="wrapper-right-bottom text-left">
+					<p><i class="fas fa-check"></i>30-day Money Back Guarantee</p>
+					<p><i class="far fa-calendar-alt"></i>Unlimited reports</p>
+					<p><i class="far fa-user"></i>Unlimited users</p>
+					<p><i class="far fa-hdd"></i>Data storage for 365 days</p>
+					<p><i class="fas fa-key"></i>15-day free trial</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--agency-->
+	<div class="container-agency container-fluid padding" id="main-agency">
+		<div class="row text-center">
+			<div class="col-sm-12">
+				<h2>Agency</h2>
+				<p>Upgrade/Downgrade anytime.</p>
+				<img src="img/pricing-agencies.webp">
+				<p>Get an extended 30-day trial:</p>
+				<button class="btn btn-large btn-danger" type="button">TRY IT</button>
+				<button class="btn btn-large btn-outline-secondary" type="button">CONTACT US</button>
+				<p>Collect data from:</p>
+				<h4>2,000 pageviews / day</h4>
+				<div class="wrapper-bottom-2">
+					<div class="bottom-memo">
+						<p>Included with your Hotjar Agency plan:</p>
+					</div>
+					<div class="row">
+						<div class="col-md-6 text-left">
+							<p><i class="fas fa-check"></i>Unlimited client sites in one central account</p>
+							<p><i class="fas fa-check"></i>Discount volume pricing</p>
+						</div>
+						<div class="col-md-6 text-left">
+							<p><i class="fas fa-check"></i>Invite client users to see and manage their data</p>
+							<p><i class="fas fa-check"></i>Rebrand the Hotjar Interface with your logo</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--business-->
+	<div class="container-fluid padding text-center" id="main-business">
+	  	<div class="container-fluid container-business">
+	  		<p>I want to collect data from <span id="slider-value"></span> pageviews per day.</p>
+			<div class="slidecontainer">
+	  		<input type="range" min="1" max="100" value="20" step="10" class="slider" id="mySlider">
+			</div>
+				<div class="row text-center">
+					<div class="col-md-4">
+						<p>20,000 pageviews / day</p>
+					</div>
+					<div class="col-md-4">
+						<p>&euro;89 / mo</p>
+					</div>
+					<div class="col-md-4">
+						<button type="button" class="btn btn-danger">TRY IT</button>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-4">
+						<p>50,000 pageviews / day</p>
+					</div>
+					<div class="col-md-4">
+						<p>&euro;189 / mo</p>
+					</div>
+					<div class="col-md-4">
+						<button type="button" class="btn btn-danger">TRY IT</button>
+					</div>
+				</div>
+				
+				<div class="row text-center">
+					<div class="col-md-4">
+						<p>120,000 pageviews / day</p>
+					</div>
+					<div class="col-md-4">
+						<p>&euro;289 / mo</p>
+					</div>
+					<div class="col-md-4">
+						<button type="button" class="btn btn-danger">TRY IT</button>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-4">
+						<p>400,000 pageviews / day</p>
+					</div>
+					<div class="col-md-4">
+						<p>&euro;589 / mo</p>
+					</div>
+					<div class="col-md-4">
+						<button type="button" class="btn btn-danger">TRY IT</button>
+					</div>
+				</div>
+				<div class="col-md-12 higher-plans text-center">
+					<p><u>+ show higher data plans</u></p>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-4">
+						<p>800,000 pageviews / day</p>
+					</div>
+					<div class="col-md-4">
+						<p>&euro;989 / mo</p>
+					</div>
+					<div class="col-md-4">
+						<button type="button" class="btn btn-danger">TRY IT</button>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-4">
+						<p>2,000,000+ pageviews / day</p>
+					</div>
+					<div class="col-md-4">
+						<p></p>
+					</div>
+					<div class="col-md-4">
+						<button type="button" class="btn btn-danger">CONTACT US</button>
+					</div>
+				</div>
+			<div class="row">		
+				<div class="wrapper-left-bottom text-left col-md-6">
+					<p><i class="far fa-calendar-alt"></i>Limited reports</p>
+					<p><i class="far fa-user"></i>Unlimited users</p>
+					<p><i class="far fa-hdd"></i>Data storage for 365 days</p>
+				</div>
+				<div class="wrapper-right-bottom text-left col-md-6">
+					<p><i class="fas fa-check"></i>30-day Money Back Guarantee</p>
+					<p><i class="far fa-calendar-alt"></i>Unlimited reports</p>
+					<p><i class="far fa-user"></i>Unlimited users</p>
+					<p><i class="far fa-hdd"></i>Data storage for 365 days</p>
+					<p><i class="fas fa-key"></i>15-day free trial</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	</div>
+	</div>
+	</div>
+</div>
+
+
+
+<!--scripts-->	
+	<script src="app.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	
+</body>
+
+</html>
