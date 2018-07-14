@@ -9,9 +9,23 @@ button {
   width: 110px;
 }
 
-.navbar-logo {
-  width: 10%;
-  height: 10%;
+.img-navbar {
+  height: 40px;;
+}
+
+.navbar {
+  height: 78px;
+
+  .container-fluid {
+    max-width: 1066px;
+  }
+  ul li {
+    padding-right: 10px;
+  }
+  .btn {
+    margin-left: 10px;
+    font-size: 12px;
+  }
 }
 
 .main-container .display-4, .display-5 {
@@ -30,13 +44,13 @@ button {
 }
 
 .business-bg {
-  @include horizontal-gradient(orange, red);
+  @include horizontal-gradient(#f0be3a, #f73647);
   height: 550px;
   width: 100%;
 }
 
 .agency-bg {
-  @include horizontal-gradient(green, yellow);
+  @include horizontal-gradient(#22ceaf, #b0e44b);
   height: 550px;
   width: 100%;
 }
@@ -86,6 +100,7 @@ button {
   color: white;
   border-radius: 50%;
   padding: 7px;
+  padding-left: 9px;
   margin-right: 5px;
 }
 
@@ -103,7 +118,6 @@ button {
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-
     margin-bottom: 20px;
 }
 
@@ -138,6 +152,10 @@ button {
   padding: 3px 10px;
 }
 
-img {
+.agency-img {
   width: 100%
+}
+
+.activeplan {
+  background-color: grey;
 }

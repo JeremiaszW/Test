@@ -15,11 +15,11 @@
 
 </head>
 
-<body onload="setMain('business')">
+<body onload="setMain('business') ">
 <!--navbar-->
 	<nav class="navbar navbar-expand-md navbar-light bg-white">
 		<div class="container-fluid">
-			<a href="#" class="navbar-logo"><img src="img/logo.webp">
+			<a href="#" class="navbar-logo"><img class="img-navbar" src="img/logo.webp">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
@@ -100,7 +100,7 @@
 			<div class="col-sm-12">
 				<h2>Agency</h2>
 				<p>Upgrade/Downgrade anytime.</p>
-				<img src="img/pricing-agencies.webp">
+				<img class="agency-img" src="img/pricing-agencies.webp">
 				<p>Get an extended 30-day trial:</p>
 				<button class="btn btn-large btn-danger" type="button">TRY IT</button>
 				<button class="btn btn-large btn-outline-secondary" type="button">CONTACT US</button>
@@ -130,9 +130,9 @@
 	  	<div class="container-fluid container-business">
 	  		<p>I want to collect data from <span id="slider-value"></span> pageviews per day.</p>
 			<div class="slidecontainer">
-	  		<input type="range" min="1" max="100" value="20" step="10" class="slider" id="mySlider">
+	  		<input type="range" min="1" max="81" value="13" step="1" class="slider" id="mySlider" onchange="changeSliderPlan()">
 			</div>
-				<div class="row text-center">
+				<div class="row row20k text-center">
 					<div class="col-md-4">
 						<p>20,000 pageviews / day</p>
 					</div>
@@ -143,7 +143,7 @@
 						<button type="button" class="btn btn-danger">TRY IT</button>
 					</div>
 				</div>
-				<div class="row text-center">
+				<div class="row row50k text-center">
 					<div class="col-md-4">
 						<p>50,000 pageviews / day</p>
 					</div>
@@ -155,7 +155,7 @@
 					</div>
 				</div>
 				
-				<div class="row text-center">
+				<div class="row row 120k text-center">
 					<div class="col-md-4">
 						<p>120,000 pageviews / day</p>
 					</div>
@@ -166,7 +166,7 @@
 						<button type="button" class="btn btn-danger">TRY IT</button>
 					</div>
 				</div>
-				<div class="row text-center">
+				<div class="row row400k ext-center">
 					<div class="col-md-4">
 						<p>400,000 pageviews / day</p>
 					</div>
@@ -180,7 +180,7 @@
 				<div class="col-md-12 higher-plans text-center">
 					<p><u>+ show higher data plans</u></p>
 				</div>
-				<div class="row text-center">
+				<div class="row row800k text-center">
 					<div class="col-md-4">
 						<p>800,000 pageviews / day</p>
 					</div>
@@ -191,7 +191,7 @@
 						<button type="button" class="btn btn-danger">TRY IT</button>
 					</div>
 				</div>
-				<div class="row text-center">
+				<div class="row row2000k text-center">
 					<div class="col-md-4">
 						<p>2,000,000+ pageviews / day</p>
 					</div>
@@ -199,7 +199,7 @@
 						<p></p>
 					</div>
 					<div class="col-md-4">
-						<button type="button" class="btn btn-danger">CONTACT US</button>
+						<button type="button" class="btn btn-danger" id="btns">CONTACT US</button>
 					</div>
 				</div>
 			<div class="row">		

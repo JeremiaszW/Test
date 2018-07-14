@@ -1,10 +1,24 @@
 let slider = document.getElementById("mySlider");
 let output = document.getElementById("slider-value");
 
-output.innerHTML = slider.value; 
-slider.oninput = function() {
-    output.innerHTML = this.value;
+// get request
+function requestJson(theUrl) {
+    let request = new XMLHttpRequest();
+    request.open("GET", "sliderdata.json", false ); 
+    request.send();
+    return JSON.parse(request.responseText);
 }
+
+let sliderData = requestJson("sliderdata.json");
+//slider is now json key/value pair
+output.innerHTML = sliderData[slider.value]; 
+slider.oninput = function() {
+    output.innerHTML = sliderData[this.value];
+    if (output.innerHTML == sliderData["81"]) {
+    	output.innerHTML +="+" // slider displaying 2000000+
+    }    
+}
+
 
 
 function setMain(businessplan) {
@@ -27,3 +41,5 @@ function setMain(businessplan) {
 		document.getElementById("memo-change").innerHTML = "For personal projects and sites with low traffic.";
 	} 
 }
+
+

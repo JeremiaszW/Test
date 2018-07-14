@@ -5,9 +5,18 @@ body, html {
 button {
   width: 110px; }
 
-.navbar-logo {
-  width: 10%;
-  height: 10%; }
+.img-navbar {
+  height: 40px; }
+
+.navbar {
+  height: 78px; }
+  .navbar .container-fluid {
+    max-width: 1066px; }
+  .navbar ul li {
+    padding-right: 10px; }
+  .navbar .btn {
+    margin-left: 10px;
+    font-size: 12px; }
 
 .main-container .display-4, .display-5 {
   color: white;
@@ -29,25 +38,25 @@ button {
   width: 100%; }
 
 .business-bg {
-  background-color: orange;
-  background-image: -moz-linear-gradient(left, orange 0%, red 100%);
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, orange), color-stop(100%, red));
-  background-image: -webkit-linear-gradient(left, orange 0%, red 100%);
-  background-image: -o-linear-gradient(left, orange 0%, red 100%);
-  background: -ms-linear-gradient(left, orange 0%, red 100%);
-  background: linear-gradient(to right, orange 0%, red 100%);
+  background-color: #f0be3a;
+  background-image: -moz-linear-gradient(left, #f0be3a 0%, #f73647 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #f0be3a), color-stop(100%, #f73647));
+  background-image: -webkit-linear-gradient(left, #f0be3a 0%, #f73647 100%);
+  background-image: -o-linear-gradient(left, #f0be3a 0%, #f73647 100%);
+  background: -ms-linear-gradient(left, #f0be3a 0%, #f73647 100%);
+  background: linear-gradient(to right, #f0be3a 0%, #f73647 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
   height: 550px;
   width: 100%; }
 
 .agency-bg {
-  background-color: green;
-  background-image: -moz-linear-gradient(left, green 0%, yellow 100%);
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, green), color-stop(100%, yellow));
-  background-image: -webkit-linear-gradient(left, green 0%, yellow 100%);
-  background-image: -o-linear-gradient(left, green 0%, yellow 100%);
-  background: -ms-linear-gradient(left, green 0%, yellow 100%);
-  background: linear-gradient(to right, green 0%, yellow 100%);
+  background-color: #22ceaf;
+  background-image: -moz-linear-gradient(left, #22ceaf 0%, #b0e44b 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #22ceaf), color-stop(100%, #b0e44b));
+  background-image: -webkit-linear-gradient(left, #22ceaf 0%, #b0e44b 100%);
+  background-image: -o-linear-gradient(left, #22ceaf 0%, #b0e44b 100%);
+  background: -ms-linear-gradient(left, #22ceaf 0%, #b0e44b 100%);
+  background: linear-gradient(to right, #22ceaf 0%, #b0e44b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
   height: 550px;
   width: 100%; }
@@ -86,6 +95,7 @@ button {
   color: white;
   border-radius: 50%;
   padding: 7px;
+  padding-left: 9px;
   margin-right: 5px; }
 
 .wrapper-left-bottom, .wrapper-right-bottom {
@@ -131,7 +141,10 @@ button {
   border-bottom: solid 1px lightgrey;
   padding: 3px 10px; }
 
-img {
+.agency-img {
   width: 100%; }
+
+.activeplan {
+  background-color: grey; }
 
 /*# sourceMappingURL=style.css.map */
