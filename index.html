@@ -15,7 +15,7 @@
 
 </head>
 
-<body onload="setMainBusiness()">
+<body onload="setMain('business')">
 <!--navbar-->
 	<nav class="navbar navbar-expand-md navbar-light bg-white">
 		<div class="container-fluid">
@@ -51,15 +51,11 @@
 			<div class="display-4">Find the right plan for your site:
 			</div>
 			<div class="buttons-group btn-group btn-group-lg" role="group">
-				<button type="button" class="btn btn-secondary" onclick="setMainPersonal()">Personal</button>
-				<button type="button" class="btn btn-secondary" onclick="setMainBusiness()">Business</button>
-				<button type="button" class="btn btn-secondary" onclick="setMainAgency()">Agency</button>
+				<button type="button" class="btn btn-secondary" onclick="setMain('personal')">Personal</button>
+				<button type="button" class="btn btn-secondary" onclick="setMain('business')">Business</button>
+				<button type="button" class="btn btn-secondary" onclick="setMain('agency')">Agency</button>
 			</div>	
-			<div class="memo-change">
-				<div class="personal-memo display-5 text-center">For personal projects and sites with low traffic.</div>
-				<div class="business-memo display-5 text-center">We offer plans for Businesses of all sizes.</div>
-				<div class="agency-memo display-5 text-center">For Agencies and Consultants working with client sites.</div>
-			</div>		
+			<div id="memo-change" class="display-5 text-center"></div>		
 		</div>
 	</div>
 
@@ -69,7 +65,7 @@
 		<div class="row text-center">
 			<div class="col-sm-6">
 				<h2>BASIC</h2>
-				<p>A limited plan for students & enthusiasts.</p>
+				<p>A limited plan for students &amp; enthusiasts.</p>
 				<h3>FREE FOREVER</h3>
 				<button class="btn btn-large btn-outline-secondary" type="button">START NOW</button>
 				<p>Collect data from:</p>
@@ -82,7 +78,7 @@
 			</div>
 			<div class="col-sm-6 ">
 				<h2>PLUS</h2>
-				<p>For low traffic sites & early stage Startups.</p>
+				<p>For low traffic sites &amp; early stage Startups.</p>
 				<h3>&euro; 29 / month</h3>
 				<button class="btn btn-large btn-danger" type="button">TRY IT</button>
 				<p>Collect data from:</p>
@@ -97,6 +93,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!--agency-->
 	<div class="container-agency container-fluid padding" id="main-agency">
 		<div class="row text-center">
