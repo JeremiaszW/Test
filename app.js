@@ -20,7 +20,6 @@ function changePlanButtons() {
 	$('.changable-button').removeClass("btn-danger").addClass("btn-outline-secondary");
 }
 
-
 function colorPlanButtons(rowNumber) {
 	let row_number = rowNumber
 	$('.underlined-rows .row').css("background-color", "white");

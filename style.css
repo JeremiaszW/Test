@@ -134,6 +134,9 @@ button {
   background: white;
   cursor: pointer; }
 
+.slider::-ms-fill-lower {
+  background-color: red; }
+
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
