@@ -90,13 +90,25 @@ button {
   }
 }
 
+.underlined-rows {
+  padding-left: 25px;
+  padding-right: 25px;
+  .row {
+    border-bottom: solid 1px lightgrey;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+
 
 
 .far, .fas {
   display: block;
   width: 32px;
   height: 32px;
-  background-color: green;
+  background-color: #41ea41;
   color: white;
   border-radius: 50%;
   padding: 7px;
@@ -153,9 +165,20 @@ button {
 }
 
 .agency-img {
-  width: 100%
+  height: auto;
+  max-height: 230px;
+  width: 100%;
+  max-width: 545px;
 }
 
 .activeplan {
   background-color: grey;
+}
+
+.more-plans {
+  display: none;
+}
+
+u:hover {
+  cursor: pointer;
 }
